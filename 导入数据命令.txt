@@ -1,0 +1,12 @@
+start-all.sh
+hiveserver2 一直保持运行
+hdfs dfs -mkdir /conv19   
+hdfs dfs -put ~/beijing.csv /conv19/
+测试是否上传成功
+hdfs dfs -cat /conv19/beijing.csv    
+hive 
+>  	use piaomzdb;
+>	create table bjCon19(day string, provice string,city string,confirmed int,suspected int, cured int,dead int,rank int) row format delimited fields terminated by ',' location '/conv19/';
+
+
+

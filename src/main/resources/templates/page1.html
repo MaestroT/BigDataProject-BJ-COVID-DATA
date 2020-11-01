@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON格式测试</title>
+</head>
+<body>
+
+    <h1>JSON格式测试</h1>
+
+    <script>
+
+        var jsonStr3 = "[{'table':{'rows':[{'adminId':1, 'deptId':1,'adminName':'苏关兴'},{'adminId':2, 'deptId':3,'adminName':'阿斯雅' }]}}]";
+        var jsonObj3 = eval(jsonStr3);
+
+        //使用json格式编写的字符串
+        var jsonStr = "[{'adminId':1, 'deptId':1,'adminName':'苏关兴'}]";
+        var jsonObj2 = eval(jsonStr);
+        //json对象
+        var jsonObj = [{'adminId':1, 'deptId':1,'adminName':'苏关兴'}];
+
+        alert(jsonObj[0].adminName);
+        debugger;
+        alert(jsonObj3[0].table.rows[1].adminName);
+        var
+    </script>
+
+</body>
+</html>

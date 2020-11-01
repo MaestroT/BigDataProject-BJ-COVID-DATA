@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax调用者</title>
+    <script src="/js/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+
+    <p id="ta"></p>
+
+    <script>
+        var res;
+        //定时向服务器发出ajax请求，将请求结果动态的添加到多行文本框中
+        function ajaxrequest() {
+            //var no = Math.ceil(Math.random()*10);
+            $.get("/test/Con19",
+                //{ index: no},
+                function(data){
+                    //回调函数
+                    //$("#ta").text(data);
+                    res=JSON.parse(data);
+                    console.log(res);
+                    confirmed=[];
+                    cured=[];
+                    dead=[];
+                    for(i=0;i<res.history.length;i++){
+                        confirmed.push(res.history[i].confirmed);
+                        cured.push(res.history[i].cured)
+                        dead.push(res.history[i].dead)
+                    }
+
+                }
+            )
+        }
+        //setInterval("ajaxrequest()",15000);
+        ajaxrequest();
+
+    </script>
+
+</body>
+</html>

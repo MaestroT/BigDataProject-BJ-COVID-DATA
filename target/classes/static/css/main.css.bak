@@ -1,0 +1,56 @@
+#title{
+	position: absolute;
+	width: 40%;
+	height: 10%;
+	top: 0;
+	left: 30%;
+	background: #777777;
+}
+#c1{
+	position: absolute;
+	width: 40%;
+	height: 30%;
+	top: 10%;
+	left: 30%;
+	background: #666666;
+}
+#c2{
+	position: absolute;
+	width: 40%;
+	height: 30%;
+	top: 40%;
+	left: 30%;
+	background: #666666;
+}
+#l1{
+	position: absolute;
+	width: 30%;
+	height: 45%;
+	top: 10%;
+	left: 0;
+	background: #666666;
+}
+#l2{
+	position: absolute;
+	width: 30%;
+	height: 45%;
+	top: 55%;
+	left: 0;
+	background: #666666;
+}
+#r1{
+	position: absolute;
+	width: 30%;
+	height: 45%;
+	top: 0;
+	right: 0;
+	background: #666666;
+}
+#r2{
+	position: absolute;
+	width: 30%;
+	height: 45%;
+	top: 0;
+	right: 0;
+	background: #666666;
+}
